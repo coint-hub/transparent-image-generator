@@ -7,5 +7,5 @@ setup(
     python_requires='>=3.7',
     packages=['transparent_image_generator'],
     install_requires=['pypng>=0.0.20'],
-    extras_require={'dev': ['pytest']}
+    extras_require={'dev': ['pytest', 'setuptools', 'wheel', 'twine']}
 )

@@ -4,3 +4,7 @@ setup: venv
 
 venv:
 	python3.7 -m venv venv
+
+dist: setup
+	venv/bin/python setup.py sdist bdist_wheel
+	venv/bin/twine upload dist/*
